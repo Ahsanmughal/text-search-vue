@@ -1,24 +1,24 @@
-# text-search-vue
+# Vue Text Search Project
+This is a simple text search project build with Vue using the Option API. It allow users to search througha list of articles with highlighted results.
 
-## Project setup
-```
+## Features
+- Search articles dynamically
+- Case-sensitive search toggle
+- Highlight matching text
+- Clean and elegant UI
+
+## Installation & Setup
+### 1. Clone the repository
+``` sh git clone https://github.com/Ahsanmughal/text-search-vue.git```
+cd text-search-vue
+### 2. Install Dependencies
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
+### 3. Run the application
 npm run serve
-```
+### 4. Open in browser
+visit http://localhost:8080
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technologies User
+- Vue
+- JavaScript
+- CSS

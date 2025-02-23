@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 class="title"> Text Search Project</h1>
+  <TextSearch/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TextSearch from './components/TextSearch.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TextSearch
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.title {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
 }
 </style>

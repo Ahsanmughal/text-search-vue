@@ -1,9 +1,16 @@
+# OS specifice files
 .DS_Store
-node_modules
-/dist
+# Node.js dependencies
+node_modules/
+
+# Build Output
+/dist/
+.cache/
+.Output/
 
 
 # local env files
+.env
 .env.local
 .env.*.local
 
@@ -21,3 +28,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Testing coverage reports
+coverage/
+
+# Vue-specific
+public/.output
