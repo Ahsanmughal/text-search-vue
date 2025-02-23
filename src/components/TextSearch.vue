@@ -1,7 +1,14 @@
 <template>
    <div class="container">
         <h2 class="search-title">Search</h2>
-        <input v-model="searchTerm" type="text" placeholder="Type to search..." class="search-box"/>
+        <div class="search-box-container">
+            <input v-model="searchTerm" type="text" placeholder="Type to search..." class="search-box"/>
+            <span v-if="searchTerm" >
+                <svg class="clear-icon" @click="clearSearch" width="16px" height="16px" view-box="0 0 16 16" fill="currentColor">
+                    <path d="M4 4L12 12M12 4L4 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+        </div>
         <p class="results-count">
             <strong>{{ filteredArticles.length }}</strong>
             posts found.
@@ -39,6 +46,9 @@ export default {
 
             const regex = new RegExp(`(${this.searchTerm})`, "gi");
             return text.replace(regex, `<span class="highlight">$1</span>`)
+        },
+        clearSearch() {
+            this.searchTerm = "";
         }
     }
 }
@@ -67,6 +77,20 @@ export default {
 }
 .search-box:focus {
     border-color: #0056b3;
+}
+
+.search-box-container {
+    position: relative;
+    width: 100%;
+}
+.clear-icon {
+    position: absolute;
+    right: 20px;
+    top: 26%;
+    font-size: 18px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
 }
 .article-card {
     background-color: #f9f9f9;
