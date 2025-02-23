@@ -10,6 +10,7 @@ This is a simple text search project build with Vue using the Option API. It all
 ## Installation & Setup
 ### 1. Clone the repository
 ``` sh git clone https://github.com/Ahsanmughal/text-search-vue.git```
+
 cd text-search-vue
 ### 2. Install Dependencies
 npm install
@@ -18,7 +19,7 @@ npm run serve
 ### 4. Open in browser
 visit http://localhost:8080
 
-## Technologies User
+## Technologies Used
 - Vue
 - JavaScript
 - CSS
